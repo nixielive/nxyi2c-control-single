@@ -47,11 +47,6 @@ void loop()
   g_cmd.value = PATTERN_DURATION;
   sendCommand(I2CADDR, g_cmd);
 
-  // set number
-  g_cmd.command = nxyi2c_set_number;
-  g_cmd.value = PATTERN_DURATION;
-  sendCommand(I2CADDR, g_cmd);
-
   // set display number
   g_cmd.command = nxyi2c_set_number;
   g_cmd.value = g_displayNumber;
